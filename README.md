@@ -43,6 +43,11 @@ npm run dev
 
 Then open the local URL shown in the terminal (usually http://localhost:5173).
 
+## Screenshot
+
+> Screenshot placeholder: add a dashboard image at `public/spendr-dashboard.png`, then replace this note with:
+> `![Spendr dashboard](./public/spendr-dashboard.png)`
+
 ### Production build
 
 ```bash
@@ -61,6 +66,24 @@ npm run preview
 - `npm run build` — create a production build
 - `npm run preview` — preview the production build locally
 - `npm run lint` — run the project linter
+
+## Deployment
+
+Spendr is a static Vite app. Build it with `npm run build`; the production files are written to `dist/`.
+
+### Deploy to Netlify
+
+1. Import the repository in Netlify.
+2. Set the build command to `npm run build`.
+3. Set the publish directory to `dist`.
+4. Deploy the site.
+
+### Deploy to Vercel
+
+1. Import the repository in Vercel.
+2. Select the Vite framework preset (or configure the project manually).
+3. Set the build command to `npm run build` and the output directory to `dist`.
+4. Deploy the site.
 
 ## Project Structure
 
